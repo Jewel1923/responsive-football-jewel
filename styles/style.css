@@ -10,6 +10,12 @@ main{
     display: flex;
     flex-direction: column;
 }
+.orange{
+    color: orange;     
+}
+.blue{
+    color: blue;
+}
 .fa-arrow-right{
     color: white;
 }
@@ -38,12 +44,14 @@ nav > ul{
 }
 nav li:hover{
     background-color:#E02C6D ;
+    
 }
 nav > ul > div >li:hover > ul{
     display:block;
     background-color: rgba(255, 99, 71, 0.116);
 }
 #list{
+
     display: flex;
     text-align: center;
     font-size: 15px;
@@ -51,6 +59,9 @@ nav > ul > div >li:hover > ul{
 .dropdown{
     display: none;
     position: absolute;
+    margin: 0;
+    padding:0;
+    
 }
 #login{
     cursor: pointer;
@@ -103,7 +114,7 @@ h1{
     font-size: 40px;
     margin-left: 30px;
     font-weight: 700;
-    color: royalblue;
+    color: blue;
 }
 .players{
     margin:40px 150px;
@@ -142,7 +153,8 @@ h1{
 }
 .player-details h3{
     text-align: center;
-    color: royalblue;
+    font-weight: 700px;
+    font-size: 25px;
 }
  
 /* highlight section  */
