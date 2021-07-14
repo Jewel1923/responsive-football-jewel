@@ -217,6 +217,7 @@ footer{
         width: 75%;
         justify-content: center;
         align-items: center;
+        background-color: royalblue;
     }
     /* banner section  */
     .container{
@@ -248,7 +249,7 @@ footer{
     .players{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin: 5px 5px 5px 35px;
+        margin: 5px 5px 5px 60px;
         grid-column-gap: 0;
         justify-content: center;
         
