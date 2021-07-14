@@ -9,6 +9,54 @@ body{
 .fa-arrow-right{
     color: white;
 }
+/* nav bar  */
+.navigation{
+    background-color: #2D25A0;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+nav li{
+    list-style: none;
+    margin-right: 20px;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+nav li:hover{
+    background-color:#E02C6D ;
+}
+nav > ul > div >li:hover > ul{
+    display:block;
+    background-color: rgba(255, 99, 71, 0.274);
+}
+#list{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+}
+#login{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700px;
+    background-color: #E02C6D;
+    color: white;
+    padding:10px 20px;
+    border-radius: 10px;
+}
 
 /* Conmebol Copa America 2021 */
 .container{
@@ -21,7 +69,7 @@ body{
     font-size: 60px;
 }
 .container:hover .web-banner{
-    transform: translate(150px);
+    transform: translate(90px);
 }
 .web-title{
     font-family: 'Satisfy', cursive;
@@ -39,10 +87,10 @@ body{
 }
 .web-banner{
     position: relative;
-    transition: transform 7s ease-in-out;
+    transition: transform 4s ease-in-out;
 }
 
-/* palyers section  */
+/* players section  */
 .players{
     margin:40px 150px;
     display: grid;
@@ -94,7 +142,7 @@ body{
     
 }
 .highlight:hover .highlight-banner{
-    transform: translate(100px);
+    transform: translate(90px);
 }
 .h-title{
     font-family: 'Kaushan Script', cursive;
@@ -116,7 +164,7 @@ body{
 .highlight-banner{
     
     position: relative;
-    transition: transform 7s ease;
+    transition: transform 4s ease;
 }
 /* Footer  */
 footer{
@@ -137,12 +185,34 @@ footer{
 
 /* mobile devices  */
 @media only screen and (max-width:688px) {
+    /* navigation bar  */
+    nav > ul{
+        display: block;
+        width:400px;
+    }
+    nav > ul > div > li{
+        display: block;
+        width:400px;
+    }
+    #list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    #login{
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+    }
     /* banner section  */
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 40px;
+        font-size: 45px;
     }
     .container:hover .web-banner{
         transform: translate(40px);
@@ -206,7 +276,7 @@ footer{
        justify-content: center;
        align-items: center;
    }
-   footer-banner img{
+   .footer-banner img{
     width: 300px;
     height: 90px;
    }
