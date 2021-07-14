@@ -6,6 +6,10 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
 .fa-arrow-right{
     color: white;
 }
@@ -37,7 +41,7 @@ nav li:hover{
 }
 nav > ul > div >li:hover > ul{
     display:block;
-    background-color: rgba(255, 99, 71, 0.274);
+    background-color: rgba(255, 99, 71, 0.116);
 }
 #list{
     display: flex;
@@ -247,9 +251,10 @@ footer{
         font-size: 30px;
     }
     .players{
+       
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin: 5px 5px 5px 60px;
+        margin: 10px 30px;
         grid-column-gap: 0;
         justify-content: center;
         
@@ -259,6 +264,7 @@ footer{
         width: 330px;
         justify-content: center;
         align-items: center;
+    
     
         
     }
