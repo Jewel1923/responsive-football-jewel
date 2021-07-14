@@ -210,7 +210,7 @@ footer{
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         font-size: 15px;
     }
     #login{
@@ -248,7 +248,7 @@ footer{
     .players{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin: 0;
+        margin: 5px 5px 5px 35px;
         grid-column-gap: 0;
         justify-content: center;
         
